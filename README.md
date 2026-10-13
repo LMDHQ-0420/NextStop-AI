@@ -1,5 +1,5 @@
 <p align="center">
-  <img src="assets/logo-with-text.svg" alt="NextStop AI" width="720">
+  <img src="assets/logo-with-text.svg" alt="NextStop AI" width="480">
 </p>
 
 <p align="center">
