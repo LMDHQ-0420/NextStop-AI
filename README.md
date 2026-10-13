@@ -15,9 +15,9 @@
 </p>
 
 <p align="center">
+  <a href="#example">Example</a> ·
   <a href="#skills">Skills</a> ·
   <a href="#quick-start">Quick start</a> ·
-  <a href="#example">Example</a> ·
   <a href="#follow-on-wechat">Follow on WeChat</a>
 </p>
 
@@ -28,6 +28,16 @@
 NextStop AI brings two parts of the research workflow together: finding large-model papers with meaningful contributions, and explaining those contributions through clear, evidence-based visuals.
 
 Each skill is a single `SKILL.md` prompt. You can load it in a compatible coding agent or use it directly as a prompt in an AI assistant. The repository contains no bundled scripts or reference files; your agent supplies the tools needed to carry out the task.
+
+## Example
+
+An OVO-Bench poster overview illustrating the Paper Visualization workflow. The eight-page sequence moves from the research question through original evidence to results and limitations; page count varies with each paper.
+
+[![OVO-Bench: an eight-page research poster overview](assets/paper-visualization-ovo-bench.png)](assets/paper-visualization-ovo-bench.png)
+
+<p align="center">
+  <sub>Open the image to view the full-resolution overview.</sub>
+</p>
 
 ## Skills
 
@@ -74,16 +84,6 @@ Create the complete poster package and ready-to-publish Chinese copy.
 ```
 
 Provide the full paper or a link to its full text, plus any supplementary materials or visual references. The agent needs paper-reading, browser-rendering, and file-export tools. PNGs are rendered from the final HTML at a minimum of 3× the design resolution.
-
-## Example
-
-An OVO-Bench poster overview illustrating the Paper Visualization workflow. The eight-page sequence moves from the research question through original evidence to results and limitations; page count varies with each paper.
-
-[![OVO-Bench: an eight-page research poster overview](assets/paper-visualization-ovo-bench.png)](assets/paper-visualization-ovo-bench.png)
-
-<p align="center">
-  <sub>Open the image to view the full-resolution overview.</sub>
-</p>
 
 ## Follow on WeChat
 

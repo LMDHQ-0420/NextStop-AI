@@ -15,9 +15,9 @@
 </p>
 
 <p align="center">
+  <a href="#示例">示例</a> ·
   <a href="#skills">Skills</a> ·
   <a href="#快速开始">快速开始</a> ·
-  <a href="#示例">示例</a> ·
   <a href="#关注公众号">关注公众号</a>
 </p>
 
@@ -28,6 +28,16 @@
 NextStop AI 将研究工作中的两个环节连接起来：找到具有实质贡献的大模型论文，再通过清晰、基于证据的视觉叙事讲明白这些贡献。
 
 每个 Skill 都是一个独立的 `SKILL.md` 提示词，可以在兼容的编程 Agent 中加载，也可以直接作为 AI 助手的任务提示词使用。仓库不附带脚本或参考文件，具体任务所需的工具由运行环境提供。
+
+## 示例
+
+以下 OVO-Bench 海报总览展示了论文可视化工作流的产出形式。八页内容从研究问题展开，通过原始证据呈现结果与局限；实际任务的页数由论文内容决定。
+
+[![OVO-Bench：八页论文海报总览](assets/paper-visualization-ovo-bench.png)](assets/paper-visualization-ovo-bench.png)
+
+<p align="center">
+  <sub>点击图片查看完整分辨率的总览。</sub>
+</p>
 
 ## Skills
 
@@ -74,16 +84,6 @@ cd NextStop-AI
 ```
 
 提供论文全文或全文链接，以及可选的补充材料和视觉参考。运行环境需要支持论文读取、浏览器渲染和文件导出。PNG 从最终 HTML 直接渲染，分辨率至少为设计画布的 3 倍。
-
-## 示例
-
-以下 OVO-Bench 海报总览展示了论文可视化工作流的产出形式。八页内容从研究问题展开，通过原始证据呈现结果与局限；实际任务的页数由论文内容决定。
-
-[![OVO-Bench：八页论文海报总览](assets/paper-visualization-ovo-bench.png)](assets/paper-visualization-ovo-bench.png)
-
-<p align="center">
-  <sub>点击图片查看完整分辨率的总览。</sub>
-</p>
 
 ## 关注公众号
 
