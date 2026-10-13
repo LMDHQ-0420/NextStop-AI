@@ -18,7 +18,7 @@
   <a href="#skills">Skills</a> ·
   <a href="#quick-start">Quick start</a> ·
   <a href="#example">Example</a> ·
-  <a href="#contributing">Contributing</a>
+  <a href="#follow-on-wechat">Follow on WeChat</a>
 </p>
 
 ---
@@ -85,8 +85,14 @@ An OVO-Bench poster overview illustrating the Paper Visualization workflow. The 
   <sub>Open the image to view the full-resolution overview.</sub>
 </p>
 
-## Contributing
+## Follow on WeChat
 
-Issues and pull requests are welcome. Useful contributions include clearer instructions, stronger evidence checks, and examples that make research easier to understand.
+Our WeChat Official Account, **NextStopAI**, shares the latest frontier AI papers every day through clear, accessible explanations. Follow us to keep up with new research.
 
-Keep each skill self-contained in its `SKILL.md`, and preserve the shared structure: goal, inputs and defaults, workflow, quality requirements, outputs, and final checks. When proposing a change, describe the use case and how it improves the result.
+<p align="center">
+  <img src="assets/wechat-qr-code.jpg" alt="Scan to follow NextStopAI on WeChat" width="260">
+</p>
+
+<p align="center">
+  <sub>Scan the QR code in WeChat to follow NextStopAI.</sub>
+</p>
