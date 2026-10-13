@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg xmlns="http://www.w3.org/2000/svg" width="1254" height="1254"
+     viewBox="0 0 1254 1254" role="img" aria-labelledby="logo-title logo-desc">
+  <title id="logo-title">下一站AI实验室</title>
+  <desc id="logo-desc">白底深灰纯色几何门户标志，依据原图轮廓重绘的可编辑矢量图。</desc>
+  <rect id="background" width="1254" height="1254" fill="#FFFFFF"/>
+  <g id="logo" fill="#2F3137">
+    <path id="left-panel" d="M 601.6,227.7
+      L 325.9,360.0
+      C 293.4,375.6 274.0,405.3 274.0,439.5
+      L 274.0,960.0
+      L 488.6,775.9
+      L 488.6,439.4
+      L 601.6,375.6 Z"/>
+    <path id="right-panel" d="M 652.9,227.7
+      L 930.0,360.8
+      C 961.7,376.0 979.9,405.8 979.9,439.5
+      L 979.9,960.0
+      L 765.9,775.9
+      L 765.9,439.4
+      L 652.9,375.6 Z"/>
+    <path id="threshold" d="M 571.9,775.5
+      L 682.8,775.5
+      L 923.3,1012.6
+      L 330.9,1012.6 Z"/>
+  </g>
+</svg>

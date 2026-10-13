@@ -1,27 +1,92 @@
-# NextStop AI
+<p align="center">
+  <img src="assets/logo-with-text.svg" alt="NextStop AI" width="720">
+</p>
 
-面向大模型研究的论文检索与论文可视化提示词 Skill。
+<p align="center">
+  <strong>Discover research worth reading. Turn it into a story worth sharing.</strong>
+</p>
+
+<p align="center">
+  Evidence-driven skills for AI paper discovery and visual communication.
+</p>
+
+<p align="center">
+  English · <a href="README_zh.md">简体中文</a>
+</p>
+
+<p align="center">
+  <a href="#skills">Skills</a> ·
+  <a href="#quick-start">Quick start</a> ·
+  <a href="#example">Example</a> ·
+  <a href="#contributing">Contributing</a>
+</p>
+
+---
+
+## Overview
+
+NextStop AI brings two parts of the research workflow together: finding large-model papers with meaningful contributions, and explaining those contributions through clear, evidence-based visuals.
+
+Each skill is a single `SKILL.md` prompt. You can load it in a compatible coding agent or use it directly as a prompt in an AI assistant. The repository contains no bundled scripts or reference files; your agent supplies the tools needed to carry out the task.
 
 ## Skills
 
-两个 Skill 使用相同的六部分结构：任务目标、输入与默认值、执行流程、质量要求、输出要求、交付前检查。每个目录只包含 `SKILL.md`，没有附带脚本、参考文件或额外依赖配置。
-
-| Skill | 用途 | 提示词 |
+| Skill | What it does | What you get |
 | --- | --- | --- |
-| `paper-search` | 筛选过去 72 小时内兼具实质创新与真实外部关注的大模型论文 | [SKILL.md](skills/paper-search/SKILL.md) |
-| `paper-visualization` | 将论文制作成多页海报、高清 PNG 和可直接发布的宣传文字 | [SKILL.md](skills/paper-visualization/SKILL.md) |
+| [Paper Search](skills/paper-search/SKILL.md) | Searches the past 72 hours for LLM and multimodal research, checking novelty, publication events, and independent attention. | Up to 10 ranked papers with primary sources, supporting evidence, limitations, and a priority reading list. |
+| [Paper Visualization](skills/paper-visualization/SKILL.md) | Reads a paper, identifies its strongest contribution, and builds a visual narrative around the original figures and results. | Self-contained HTML posters, high-resolution PNGs, an overview image, a ZIP package, ready-to-publish copy, and an evidence brief. |
 
-可将对应目录安装到支持 `SKILL.md` 的环境中，也可直接使用文件中的提示词。执行任务所需的联网、论文读取、浏览器渲染和文件导出能力由运行环境提供。
+### Principles
 
-## 品牌资源
+- **Scientific value first.** Reputation and popularity support selection; substantive innovation is required.
+- **Traceable claims.** Publication dates, comparisons, metrics, and external attention must be verifiable.
+- **Original evidence.** Paper figures and tables remain visible and retain their experimental context.
+- **Story before layout.** The contribution determines the narrative and page count.
+- **Complete deliverables.** Visualization includes editable HTML, rendered images, and publication copy.
 
-品牌资源统一存放在 `assets/`。
+## Quick start
 
-| 文件名 | 内容 | 状态 |
-| --- | --- | --- |
-| `logo.png` | 不带文字的图形 logo | 已加入，保留原文件 |
-| `logo.svg` | 图形 logo 的 SVG 版本 | 待提供 |
-| `logo-with-text.png` | 带文字的 logo | 待提供 |
-| `logo-with-text.svg` | 带文字 logo 的 SVG 版本 | 待提供 |
+### 1. Get the skills
 
-后续版本按上述文件名加入；当前不生成占位图或自动描摹版本。
+```bash
+git clone git@github.com:LMDHQ-0420/NextStop-AI.git
+cd NextStop-AI
+```
+
+Install either folder from `skills/` using your agent's local skill-directory convention, or copy the contents of its `SKILL.md` into your assistant as the task instructions. Both skill prompts are written in Chinese.
+
+### 2. Give your agent a task
+
+**Discover recent papers**
+
+```text
+Use paper-search to find the most noteworthy LLM and multimodal papers
+from the past 72 hours. Use Asia/Shanghai as the reporting timezone.
+```
+
+Live web access is required to verify publication events and external attention. If fewer than 10 papers meet the criteria, the skill reports the actual count.
+
+**Visualize a paper**
+
+```text
+Use paper-visualization with the attached paper and supplementary material.
+Create the complete poster package and ready-to-publish Chinese copy.
+```
+
+Provide the full paper or a link to its full text, plus any supplementary materials or visual references. The agent needs paper-reading, browser-rendering, and file-export tools. PNGs are rendered from the final HTML at a minimum of 3× the design resolution.
+
+## Example
+
+An OVO-Bench poster overview illustrating the Paper Visualization workflow. The eight-page sequence moves from the research question through original evidence to results and limitations; page count varies with each paper.
+
+[![OVO-Bench: an eight-page research poster overview](assets/paper-visualization-ovo-bench.png)](assets/paper-visualization-ovo-bench.png)
+
+<p align="center">
+  <sub>Open the image to view the full-resolution overview.</sub>
+</p>
+
+## Contributing
+
+Issues and pull requests are welcome. Useful contributions include clearer instructions, stronger evidence checks, and examples that make research easier to understand.
+
+Keep each skill self-contained in its `SKILL.md`, and preserve the shared structure: goal, inputs and defaults, workflow, quality requirements, outputs, and final checks. When proposing a change, describe the use case and how it improves the result.
